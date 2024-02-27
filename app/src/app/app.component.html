@@ -1,0 +1,41 @@
+<div class="container">
+
+
+<div class="header">
+  <h1>Leaderboard</h1>
+</div>
+ <div class="d-flex justify-content-center">
+ 
+  <button
+    routerLink="currentweek200"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    type="button"
+    class="btn btn-primary m-5"
+  >
+    weekly leaderboard (Top 200)
+  </button>
+  <button
+    routerLink="lastweek200"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    type="button"
+    class="btn btn-primary   m-5"
+  >
+    Last week leaderboard (Top 200)
+  </button>
+ 
+  <button
+    routerLink="/ranking"
+  
+ 
+    type="button"
+    class="btn btn-primary   m-5"
+  >
+    Get user ranking by  User id
+  </button>
+</div>
+ 
+</div>
+
+<router-outlet></router-outlet>

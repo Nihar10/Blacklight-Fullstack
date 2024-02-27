@@ -1,0 +1,55 @@
+ 
+
+
+  <div class="d-flex flex-column justify-content-center align-items-center ">
+    <div class="col-md-6 mx-auto">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter country Code"
+          [(ngModel)]="country"
+        />
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" (click)="fetchData()">
+            Search
+          </button>
+        </div>
+        <div id="snackbar">Please Enter Some Text</div>
+      </div>
+    </div>
+  
+    <div id = "container" class="col-md-6 mx-auto">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <table  class="table col-md-5">
+            <thead>
+              <tr>
+                <th scope="col">User ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Score</th>
+                <th scope="col">Country</th>
+                 
+              </tr>
+            </thead>
+            <tbody>
+              @if(users.length!=0){
+                @for(data of users; track data.UID){
+                  <tr>
+                    <td>{{ data.UID }}</td>
+                    <td>{{ data.Name }}</td>
+                    <td>{{ data.Score }}</td>
+                    <td>{{ data.Country }}</td>
+                  </tr>
+                  }
+              }
+               
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: center;
+    width: 200%;
+}
+.table_tr:nth-child(even) {
+    background-color: #dddddd;
+}
+@media screen and (min-width: 1920px) {
+    .container {
+        height: 484px;
+    }
+}

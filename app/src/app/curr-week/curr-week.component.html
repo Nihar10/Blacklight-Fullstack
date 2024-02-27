@@ -1,0 +1,35 @@
+
+<div class="container d.flex flex-column">
+
+    
+    <h3 class="card-title text-center my-2 "> Weekly Leadership top 200</h3>
+              <table class="table table-striped col-md-10">
+              
+                <thead>
+                  <tr>
+                    <th scope="col">User ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Score</th>
+                    <th scope="col">Country</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                 
+                  @for(data of users; track data.UID){
+                  <tr>
+                    <td>{{ data.UID }}</td>
+                    <td>{{ data.Name }}</td>
+                    <td>{{ data.Score }}</td>
+                    <td>{{ data.Country }}</td>
+                    
+                  </tr>
+                  }
+                </tbody>
+              </table>
+             
+           
+    </div>
+    
+    
+     
