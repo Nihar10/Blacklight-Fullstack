@@ -1,13 +1,102 @@
-.container{
-    display: flex;
-    justify-content: center;
-    width: 200%;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff; /* Blue color for the title */
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
 .table_tr:nth-child(even) {
-    background-color: #dddddd;
+  background-color: #dddddd;
 }
-@media screen and (min-width: 1920px) {
-    .container {
-        height: 484px;
-    }
+
+/* Additional styles for colorful enhancements */
+
+/* Blue color for primary elements */
+.btn-primary,
+.input-group-text {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover,
+.input-group-text:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Gray color for secondary elements */
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+}
+
+/* Green color for success messages */
+.alert-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Red color for error messages */
+.alert-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Yellow color for warning messages */
+.alert-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+/* Purple color for informational messages */
+.alert-info {
+  background-color: #6f42c1;
+  color: #fff;
 }
